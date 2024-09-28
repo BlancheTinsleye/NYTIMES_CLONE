@@ -1,0 +1,363 @@
+body {
+    background-color: #f4dfc4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@font-face {
+    font-family: OldLondon;
+    src: url(FONTS/OldLondon.ttf);
+}
+
+@font-face {
+    font-family: Berkahi;
+    src: url(FONTS/Berkahi\ Blackletter.ttf);
+}
+
+@font-face {
+    font-family: Typewriter;
+    src: url(FONTS/typewcond_regular.otf);
+}
+
+@font-face {
+    font-family: Typewriter_bold;
+    src: url(FONTS/typewcond_bold.otf);
+}
+
+main {
+    width: fit-content;
+    /* display: grid; */
+    /* grid-template-columns: auto; */
+    /* grid-template-rows: auto auto auto; */
+    /* width: auto; */
+    display: flex;
+    flex-direction: column;
+
+    border: 2px solid #483628;
+}
+
+
+
+header {
+    background-color: #f4dfc488;
+    position: fixed;
+    /* position: sticky; */
+    /* dis */
+    /* display: grid; */
+    /* grid-template-columns: auto; */
+    /* flex-direction: column; */
+    /* height: auto; */
+    width: 319px;
+    border-top: 2px solid #372d3a;
+    border-bottom: 2px solid #372d3a;
+}
+
+.title {
+    border-top: 1px solid #473a3a;
+    border-bottom: 1px solid #473a3a;
+    margin: 3px;
+
+    display: flex;
+    justify-content: center;
+
+}
+
+nav {
+    /* position: fixed; */
+
+    display: flex;
+    justify-content: space-around;
+
+    width: auto;
+    height: fit-content;
+}
+
+a {
+    font-family: 'Typewriter';
+    font-size: 20px;
+    text-decoration: none;
+    /* font-weight: 10; */
+    /* width: 230px; */
+    color: #473a3a;
+
+    margin: 2vb;
+    /* align-self: center; */
+}
+
+h1 {
+    font-family: Berkahi;
+    color: #483628;
+    font-size: 35px;
+    margin: 10px;
+}
+
+#try {
+    display: flex;
+    flex-direction: column;
+}
+
+/* .science_cont, .world_cont {
+    display: flex;
+    flex-direction: column;
+
+    margin: 1vb;
+
+    border: 1px solid #483628;
+} */
+
+.science_cont {
+    padding-top: 122px;
+}
+
+.article1, .article2 {
+    display: grid;
+    grid-template-columns: auto;
+    place-items: center;
+
+    border-top: 2px solid #372d3a;
+    border-bottom: 2px solid #372d3a;
+
+    margin: 1vb;
+    /* margin-top: 1vb;
+    margin-bottom: 1vb; */
+}
+
+.news_cont1, .news_cont2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-top: 1px solid #473a3a;
+    border-bottom: 1px solid #473a3a;
+
+    width: 95%;
+    height: 97%;
+}
+
+img {
+    /* display: none; */
+    height: 170px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    /* background-color: #483628; */
+}
+
+h2 {
+    font-family: 'Typewriter';
+    font-size: 30px;
+    /* font-weight: 10; */
+    /* width: 230px; */
+    color: #473a3a;
+
+    margin: 2vb;
+    align-self: center;
+}
+
+p {
+    font-family: 'Typewriter';
+    font-size: 12px;
+    width: 230px;
+    color: #473a3a;
+}
+
+h3 {
+    font-family: 'Typewriter';
+    font-size: 20px;
+    width: 230px;
+    color: #473a3a;
+}
+
+span {
+    font-weight: bolder;
+}
+
+#logo {
+    /* height: auto; */
+    /* height: 200px; */
+    width: 200px;
+    /* padding: 1rem; */
+    object-fit: contain;
+
+}
+
+footer {
+    height: 100px;
+    width: 320px;
+    display: grid;
+    /* flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    /* align-content: center; */
+    grid-template-columns: auto;
+    place-items: center;
+}
+
+#nyt_footer_lgo {
+    /* height: 1px; */
+    display: flex;
+    height: fit-content;
+    /* width: 20px; */
+}
+
+#logo {
+    /* display: block; */
+    height: 10px;
+    /* padding: 0px; */
+}
+
+.footer_text {
+    text-align: center;
+    width: 200px;
+    /* height: 0px; */
+    /* margin: 0px; */
+}
+
+.news_cont1, .article1, h3, p {
+    transition: color 0.7s,
+    border-top 0.7s,
+    border-bottom 0.7s,
+    background-color 0.7s,
+    box-shadow 0.7s;
+}
+
+.news_cont1:hover {
+    border-top: 1px solid #f4dfc4;
+    border-bottom: 1px solid #f4dfc4;
+
+}
+
+.article1:hover {
+    background-color: #483628;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.article1:hover h3, .article1:hover p {
+    color: #f4dfc4;
+}
+
+.news_cont2, .article2, h3, p {
+    transition: color 0.7s,
+    border-top 0.7s,
+    border-bottom 0.7s,
+    background-color 0.7s,
+    box-shadow 0.7s;
+}
+
+.news_cont2:hover {
+    border-top: 1px solid #f4dfc4;
+    border-bottom: 1px solid #f4dfc4;
+
+}
+
+.article2:hover {
+    background-color: #483628;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.article2:hover h3, .article2:hover p {
+    color: #f4dfc4;
+}
+
+@media (max-width: 320px) {
+    .science_cont, .world_cont {
+    display: flex;
+    flex-direction: column;
+
+    margin: 1vb;
+
+    /* border: 1px solid #483628;            */
+}
+}
+
+@media (min-width: 1024px) {
+    .science_cont, .world_cont {
+        display: flex;
+        flex-direction: column;
+    
+        margin: 1vb;
+    }
+    
+    .science_cont {
+        /* width: 1022px; */
+        margin-top : 200px;
+    }
+
+    header {
+        width: 1000px;
+    }
+
+    a {
+        font-size: 2.5rem;
+    }
+
+    .title {
+        margin: 1.2rem;
+    }
+
+    h1 {
+        font-size: 5rem;
+        margin: 2rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    main {
+        width: 1000px;
+    }
+
+    .article1, .article2 {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+
+        /* width: 1024px; */
+    }
+
+    .news_cont1, .news_cont2 {
+        display: grid;
+        grid-template-columns: auto auto;
+        /* flex-direction: row; */
+    }
+    
+    
+    .right {
+        order: 1;
+    }
+
+    .info_cont2 {
+        /* width: auto; */
+    }
+
+    #try {
+        /* width: auto; */
+    }
+
+    p {
+        font-size: 1.2rem;
+        width: 30rem;
+    }
+
+
+
+    h3 {
+        font-size: 2rem;
+        width: 30rem;
+    }
+
+    .images {
+        height: 15rem;
+    }
+
+    #logo {
+        height: 40px;
+    }
+
+    footer {
+        /* width: 1004px; */
+    }
+}
