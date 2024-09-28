@@ -43,6 +43,7 @@ const updateContainer_scie = (data) => {
 
     if (count % 2 === 0) { 
       newsContainer_scie1.innerHTML = `
+      <h2 id="scie_cont">S C I E N C E</h2>
         <div class="news_cont1">
           <div class = "left">${multimediaHtml}</div>
           <div class = "info_cont1">
@@ -58,6 +59,7 @@ const updateContainer_scie = (data) => {
       TopNews_scie.appendChild(newsContainer_scie1);
     } else {
       newsContainer2.innerHTML = `
+      <h2 id="world_cont">W O R L D</h2>
         <div class="news_cont2">
           <div class = "right">${multimediaHtml}</div>
           <div class = "info_cont2">

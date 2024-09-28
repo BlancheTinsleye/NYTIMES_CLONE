@@ -1,6 +1,7 @@
 const t=document.getElementById("SCIENCE"),e=document.getElementById("WORLD"),a=async()=>{try{let t=await fetch("https://api.nytimes.com/svc/topstories/v2/science.json?api-key=bSoOkIDZ5I4Hu65w2Ikvg9ugGBgBCpQp");return await t.json()}catch(t){return alert("An error occured",t),[]}},s=e=>{t.innerHTML="";let a=0;(e.results||[]).forEach(e=>{let s=document.createElement("div"),i=document.createElement("div");s.setAttribute("class","article1"),i.setAttribute("class","article2");let n="";if(e.multimedia&&e.multimedia.length>0){let t=e.multimedia.find(t=>"image"===t.type);t&&(n=`
           <img class="images" src="${t.url}" alt="${t.caption||"news Image"}">
         `)}a%2==0?(s.innerHTML=`
+      <h2 id="scie_cont">S C I E N C E</h2>
         <div class="news_cont1">
           <div class = "left">${n}</div>
           <div class = "info_cont1">
@@ -12,6 +13,7 @@ const t=document.getElementById("SCIENCE"),e=document.getElementById("WORLD"),a=
           </div>
         </div>
       `,t.appendChild(s)):(i.innerHTML=`
+      <h2 id="world_cont">W O R L D</h2>
         <div class="news_cont2">
           <div class = "right">${n}</div>
           <div class = "info_cont2">
@@ -47,4 +49,4 @@ const t=document.getElementById("SCIENCE"),e=document.getElementById("WORLD"),a=
                 </div>
                 </div>
             `,e.appendChild(i)),a+=1})};(async()=>{n(await i())})();
-//# sourceMappingURL=index.e9c55720.js.map
+//# sourceMappingURL=index.e07eb204.js.map
