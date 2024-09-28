@@ -2,7 +2,7 @@
   "name": "ashley",
   "version": "1.0.0",
   "scripts": {
-    "build": "parcel build --public-url https://BlancheTinsleye.github.io/BUILDED_NYTimes NYTIMES/index.html",
+    "build": "parcel build --public-url https://BlancheTinsleye.github.io/NYTIMES_CLONE src/index.html && rm -rf docs && mv dist docs",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "serve NYTIMES/"
   },
